@@ -10,9 +10,27 @@ dependencies = [
 ]
 requires-python = ">=3.10"
 license = {text = "MIT"}
-
-[tool.pdm]
+[project.optional-dependencies]
 
 [build-system]
 requires = ["pdm-pep517>=1.0.0"]
 build-backend = "pdm.pep517.api"
+
+[tool]
+[tool.pdm]
+[tool.pdm.dev-dependencies]
+test = [
+    "pytest-django>=4.5.2",
+]
+lint = [
+    "yapf>=0.32.0",
+    "toml>=0.10.2",
+]
+
+[tool.pdm.scripts]
+server = "./manage.py runserver"
+lint = "yapf -p -r -i -vv ."
+
+[tool.yapf]
+based_on_style = "facebook"
+

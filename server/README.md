@@ -1,13 +1,29 @@
 # Server Side of FullStack Drinks Collections
 
-## Tech Stacks
+- [Tech Stacks](#1-tech-stacks)
+- [Folders](#2-folders)
+- [Development](#3-development)
+
+<br/>
+
+## 1. Tech Stacks
 
 - [Python]()
 - [Django]()
 - [pdm]()
 - ...
 
-## Development Steps
+<br/>
+
+## 2. Folders
+
+- `app`: Django's main app
+
+...
+
+<br/>
+
+## 3. Development
 
 ### Download and Setup
 
@@ -15,7 +31,7 @@
 # 1. download
 git clone <THISPROJECT>
 
-# 2. create .venv or pdm and download all dependencies
+# 2. create .venv of pdm and download all dependencies
 pdm install
 ```
 
@@ -47,4 +63,4 @@ git commit -m "fix: bugs & errors"
 - perf: enhancement performance
 - chore: change libraries
 
-###
+<br/>
